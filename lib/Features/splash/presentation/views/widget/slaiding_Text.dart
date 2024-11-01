@@ -16,7 +16,7 @@ class slaidingText extends StatelessWidget {
         return SlideTransition(
           position: slaidshow,
           child: const Text(
-            'Read Free Book',
+            'Read FrEe Book iN My APP',
             style: TextStyle(fontSize: 19),
             textAlign: TextAlign.center,
           ),
