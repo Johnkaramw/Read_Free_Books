@@ -15,7 +15,6 @@ class BoockApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color.fromARGB(255, 0, 4, 65),
       ),
       home:const SplashView(),
-      
     ) ;
   }
 }

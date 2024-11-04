@@ -1,6 +1,5 @@
-import 'package:book_app/Features/home/presintation/views/widget/CustomitemHomeview.dart';
+import 'package:book_app/Features/home/presintation/views/widget/Feature_ListView_Horezent.dart';
 import 'package:book_app/Features/home/presintation/views/widget/custome_Appbar.dart';
-import 'package:book_app/core/help/Assets.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -11,7 +10,7 @@ class HomeViewBody extends StatelessWidget {
     return const Column(
       children: [
         customAppBaar(),
-        CustomitemHomeview(),
+        FeatureListViewHorezent(),
       ],
     );
   }
