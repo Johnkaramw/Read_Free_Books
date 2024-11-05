@@ -9,9 +9,9 @@ class CustomitemHomeview extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 2 / 4,
       child: Container(
-        decoration:  BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          image:const DecorationImage(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          image: const DecorationImage(
             fit: BoxFit.fill,
             image: AssetImage(
               AsseetData.test,
