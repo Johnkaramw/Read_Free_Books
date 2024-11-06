@@ -3,6 +3,7 @@ import 'package:book_app/constans.dart';
 import 'package:book_app/core/help/Assets.dart';
 import 'package:book_app/core/help/styls.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BstsellerListView extends StatelessWidget {
   const BstsellerListView({super.key});
@@ -50,13 +51,25 @@ class BstsellerListView extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    '95 💲',
+                    '95💲',
                     style: Styles.stylefont20
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   ksizbox,
+                  const Icon(
+                    FontAwesomeIcons.solidStar,
+                    color: Colors.yellowAccent,
+                  ),
+                  const SizedBox(
+                    width: 5,
+                  ),
                   const Column(
-                    children: [Text('⭐ (4.9)')],
+                    children: [
+                      Text(
+                        ' 4.9 (285)',
+                        style: Styles.stylfont25,
+                      ),
+                    ],
                   )
                 ],
               )
