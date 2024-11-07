@@ -1,8 +1,8 @@
 import 'package:book_app/Features/home/presintation/views/widget/CustomitemHomeview.dart';
 import 'package:flutter/material.dart';
 
-class FeatureListViewHorezent extends StatelessWidget {
-  const FeatureListViewHorezent({super.key});
+class customListViewHorezent extends StatelessWidget {
+  const customListViewHorezent({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -5,8 +5,8 @@ import 'package:book_app/core/help/styls.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class BstsellerListView extends StatelessWidget {
-  const BstsellerListView({super.key});
+class listviewoneandmore extends StatelessWidget {
+  const listviewoneandmore({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class BstsellerListView extends StatelessWidget {
               SizedBox(
                 width: MediaQuery.of(context).size.width * 0.5,
                 child: const Text(
-                  'the best seller in apps dkhksddewb ofilf lofj;weofpepfoejowfilw efledjfpwj',
+                  'the best seller in apps dkhksddewb ofilf  john lata ofpepfoejowfilw efledjfpwj',
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: Styles.stylfont25,
@@ -55,13 +55,15 @@ class BstsellerListView extends StatelessWidget {
                     style: Styles.stylefont20
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
-                  ksizbox,
+                  const SizedBox(
+                    width: 25,
+                  ),
                   const Icon(
                     FontAwesomeIcons.solidStar,
                     color: Colors.yellowAccent,
                   ),
                   const SizedBox(
-                    width: 5,
+                    width: 10,
                   ),
                   const Column(
                     children: [
