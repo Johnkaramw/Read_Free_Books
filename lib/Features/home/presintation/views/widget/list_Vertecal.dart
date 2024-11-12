@@ -1,8 +1,8 @@
-import 'package:book_app/Features/home/presintation/views/widget/listviewoneandmore.dart';
+ import 'package:book_app/Features/home/presintation/views/widget/one_vertical.dart';
 import 'package:flutter/material.dart';
 
-class customlistviewvertecal extends StatelessWidget {
-  const customlistviewvertecal({super.key});
+class listVertecal extends StatelessWidget {
+  const listVertecal({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class customlistviewvertecal extends StatelessWidget {
           itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.symmetric(vertical: 10),
-              child: listviewoneandmore(),
+              child:  oneVertecal(),
             );
           }),
     );

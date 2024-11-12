@@ -1,8 +1,8 @@
 import 'package:book_app/core/help/Assets.dart';
 import 'package:flutter/material.dart';
 
-class CustomitemHomeview extends StatelessWidget {
-  const CustomitemHomeview({super.key});
+class oneHorezent extends StatelessWidget {
+  const oneHorezent({super.key});
 
   @override
   Widget build(BuildContext context) {

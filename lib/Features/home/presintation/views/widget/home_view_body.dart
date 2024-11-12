@@ -1,7 +1,7 @@
-import 'package:book_app/Features/home/presintation/views/widget/custom_ListView_Horezent.dart';
+import 'package:book_app/Features/home/presintation/views/widget/list_Vertecal.dart';
 import 'package:book_app/Features/home/presintation/views/widget/custome_Appbar.dart';
-import 'package:book_app/Features/home/presintation/views/widget/customlistviewvertecal.dart';
-import 'package:book_app/constans.dart';
+import 'package:book_app/Features/home/presintation/views/widget/list_horzen.dart';
+ import 'package:book_app/constans.dart';
 import 'package:book_app/core/help/styls.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +21,7 @@ class HomeViewBody extends StatelessWidget {
               ),
               child: customAppBaar(),
             ),
-            customListViewHorezent(),
+              listHorezen(),
             ksizbox,
             Padding(
               padding: EdgeInsets.only(left: 30),
@@ -30,12 +30,11 @@ class HomeViewBody extends StatelessWidget {
                 style: Styles.stylfont25,
               ),
             ),
-            ksizbox
-          ],
+           ],
         ),
       ),
       SliverFillRemaining(
-        child: customlistviewvertecal(),
+        child: listVertecal(),
       ),
     ]);
   }

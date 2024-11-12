@@ -1,8 +1,8 @@
-import 'package:book_app/Features/home/presintation/views/widget/CustomitemHomeview.dart';
-import 'package:flutter/material.dart';
+import 'package:book_app/Features/home/presintation/views/widget/one__horzen.dart';
+  import 'package:flutter/material.dart';
 
-class customListViewHorezent extends StatelessWidget {
-  const customListViewHorezent({super.key});
+class listHorezen extends StatelessWidget {
+  const listHorezen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class customListViewHorezent extends StatelessWidget {
             itemBuilder: (context, index) {
               return const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 5),
-                child: CustomitemHomeview(),
+                child: oneHorezent(),
               );
             }),
       ),
