@@ -4,7 +4,8 @@ import 'package:book_app/Features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class RouterAcsses {
-  static final router = GoRouter(routes: [
+  static final router = GoRouter(
+     routes: [
     GoRoute(
       path: '/',
       builder: (context, state) => const SplashView(),
