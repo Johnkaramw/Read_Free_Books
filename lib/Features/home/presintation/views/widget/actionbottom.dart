@@ -11,7 +11,7 @@ class actionbottom extends StatelessWidget {
       children: [
         Expanded(
           child: CostomBottom(
-            text: '19 dolar',
+            text:'19 dolar',
             backgraond: Colors.white,
             textColor: Colors.black,
             fontsiz: 19,

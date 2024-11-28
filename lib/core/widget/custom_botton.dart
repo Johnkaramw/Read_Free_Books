@@ -26,8 +26,8 @@ class CostomBottom extends StatelessWidget {
             borderRadius: borderRadius ?? BorderRadius.circular(16),
           ),
         ),
-        child:  Text(
-         text ,
+        child: 
+         Text( text ,
           style: TextStyle(
             color: textColor,
             fontWeight: FontWeight.bold,

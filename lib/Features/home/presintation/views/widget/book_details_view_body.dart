@@ -13,22 +13,22 @@ class BookDetailsViewBody extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(children: [
           const AppBarBookDetials(),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: width * .3),
+            padding: EdgeInsets.symmetric(horizontal: width * .35),
             child: const oneHorezent(),
           ),
           const SizedBox(
-            height: 43,
+            height: 16,
           ),
           const Text(
             'Reat in book loding',
             style: Styles.stylefont30,
           ),
           const SizedBox(
-            height: 9,
+            height: 6,
           ),
           const Text(
             'this the detials',
@@ -59,9 +59,42 @@ class BookDetailsViewBody extends StatelessWidget {
             height: 15,
           ),
           const actionbottom(),
+          const SizedBox(
+            height: 16,
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'the more books free',
+              style: Styles.stylefont20.copyWith(fontWeight: FontWeight.bold),
+            ),
+          ),
+          const listHorezintalBookdeitals()
         ]),
       ),
     );
   }
 }
 
+class listHorezintalBookdeitals extends StatelessWidget {
+  const listHorezintalBookdeitals({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.20,
+      child: Padding(
+        padding: const EdgeInsets.only(left: 4),
+        child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) {
+              return const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 5),
+                child: oneHorezent(),
+              );
+            }
+            ),
+      ),
+    );
+  }
+}
