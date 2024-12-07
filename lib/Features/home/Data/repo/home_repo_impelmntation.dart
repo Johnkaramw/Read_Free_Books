@@ -25,17 +25,37 @@ class HomeRepoImpelmntation implements HomeRepo {
         );
       }
       {
-        return left(Netowrkfailure(
-          e.toString(),
-        ),
+        return left(
+          Netowrkfailure(
+            e.toString(),
+          ),
         );
       }
     }
   }
 
   @override
-  Future<Either<Failure, List<BookModel>>> fetuchfutcherbook() {
-    // TODO: implement fetuchfutcherbook
-    throw UnimplementedError();
+  Future<Either<Failure, List<BookModel>>> fetuchfutcherbook() async {
+    try {
+      var data =
+          await apiService.get(endpoint: 'volumes?q=subject:programming');
+      List<BookModel> books = [];
+      for (var item in data['item']) {
+        books.add(BookModel.fromJson(item));
+        
+      }
+      return right(books);
+    } catch (e) {
+      if (e is DioError) {
+        return left(
+          Netowrkfailure.fromDioError(e),
+        );
+      }
+      return left(
+        Netowrkfailure(
+          e.toString(),
+        ),
+      );
+    }
   }
 }
