@@ -19,4 +19,6 @@ final class ListHoreznFailure extends ListHoreznState {
 
 final class ListHoreznSccuss extends ListHoreznState {
   final List <BookModel> books = [];
+
+  ListHoreznSccuss(List<BookModel> books);
 }

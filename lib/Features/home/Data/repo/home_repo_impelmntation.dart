@@ -9,7 +9,7 @@ class HomeRepoImpelmntation implements HomeRepo {
   final ApiService apiService;
   HomeRepoImpelmntation(this.apiService);
   @override
-  Future<Either<Failure, List<BookModel>>> fetuchNewsbook() async {
+  Future<Either<Failure, List<BookModel>>> fetuchNewsbookhorzen() async {
     try {
       var data =
           await apiService.get(endpoint: 'volumes?q=subject:programming');
