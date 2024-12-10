@@ -10,7 +10,7 @@ class ListVertecalCubit extends Cubit<ListVertecalState> {
   final HomeRepo homeRepo;
   Future<void> fetuchfutcherbook() async {
     emit(ListVertecalLoding());
-    var resalt = await homeRepo.fetuchfutcherbook();
+    var resalt = await homeRepo.fetuchrbookvertical();
     resalt.fold((failure) {
       emit(ListVertecalfailure(failure.errormessage));
     }, (books) {

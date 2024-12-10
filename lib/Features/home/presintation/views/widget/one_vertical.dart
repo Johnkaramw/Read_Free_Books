@@ -1,5 +1,4 @@
-import 'dart:ui';
- import 'package:book_app/constans.dart';
+import 'package:book_app/constans.dart';
 import 'package:book_app/core/help/Image.dart';
 import 'package:book_app/core/help/styls.dart';
 import 'package:flutter/material.dart';
@@ -41,10 +40,10 @@ class oneVertecal extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.5,
                   child: const Text(
-                    'the best seller in apps dkhksddewb ofilf  john lata  ',
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: Styles.stylfont25,
+                    'the best seller in apps',
+                     maxLines: 2,
+                     overflow: TextOverflow.ellipsis,
+                     style: Styles.stylfont25,
                   ),
                 ),
                 ksizbox,
@@ -53,28 +52,28 @@ class oneVertecal extends StatelessWidget {
                   style: Styles.stylefont20,
                 ),
                 ksizbox,
-                Row(
+             const   Row(
                   children: [
                     Text(
                       '95💲',
-                      style: Styles.stylefont20
-                          .copyWith(fontWeight: FontWeight.bold),
+                      //     style: Styles.stylefont20
+                      //     .copyWith(fontWeight: FontWeight.bold),
                     ),
-                    const SizedBox(
-                      width: 25,
+                      SizedBox(
+                      width: 2,
                     ),
-                    const Icon(
+                      Icon(
                       FontAwesomeIcons.solidStar,
                       color: Colors.yellowAccent,
                     ),
-                    const SizedBox(
-                      width: 10,
+                      SizedBox(
+                      width: 2,
                     ),
-                    const Column(
+                      Column(
                       children: [
                         Text(
                           ' 4.9 (285)',
-                          style: Styles.stylfont25,
+                          //  style: Styles.stylfont25,
                         ),
                       ],
                     )
