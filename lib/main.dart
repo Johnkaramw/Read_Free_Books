@@ -12,7 +12,6 @@ void main() {
   stupServiceApi();
   runApp(const BoockApp());
 }
-
 class BoockApp extends StatelessWidget {
   const BoockApp({Key? key}) : super(key: key);
   @override
